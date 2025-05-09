@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Jeko';
+  src: url('/fonts/jeko/JekoDEMO-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jeko';
+  src: url('/fonts/jeko/JekoDEMO-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jeko';
+  src: url('/fonts/jeko/JekoDEMO-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jeko';
+  src: url('/fonts/jeko/JekoDEMO-ExtraLightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jeko';
+  src: url('/fonts/jeko/JekoDEMO-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jeko';
+  src: url('/fonts/jeko/JekoDEMO-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Qurova';
+  src: url('/fonts/qurova/QurovaDEMO-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qurova';
+  src: url('/fonts/qurova/QurovaDEMO-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qurova';
+  src: url('/fonts/qurova/QurovaDEMO-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qurova';
+  src: url('/fonts/qurova/QurovaDEMO-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qurova';
+  src: url('/fonts/qurova/QurovaDEMO-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
