@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import './styles/font.css';
 
 :root {
   --background: #ffffff;
@@ -19,8 +20,24 @@
   }
 }
 
+* {
+  font-family: 'Jeko', 'sans-serif';
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Jeko', 'sans-serif';
+}
+
+.qurova-font {
+  font-family: 'Qurova', 'sans-serif';
+}
+
+.creamro-text {
+  color: #FFF9EB;
+  -webkit-text-stroke: 1px #A68160;
+  font-size: 72px; 
+  font-weight: bold;
+  font-family: 'Jeko'; 
 }
