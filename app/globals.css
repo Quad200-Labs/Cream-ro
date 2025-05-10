@@ -34,10 +34,7 @@ body {
   font-family: 'Qurova', 'sans-serif';
 }
 
-.creamro-text {
-  color: #FFF9EB;
+.stroke-text {
   -webkit-text-stroke: 1px #A68160;
-  font-size: 72px; 
-  font-weight: bold;
-  font-family: 'Jeko'; 
+  color: #FFF9EB;
 }
