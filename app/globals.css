@@ -21,17 +21,17 @@
 }
 
 * {
-  font-family: 'Jeko', 'sans-serif';
+  font-family: 'Jeko';
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Jeko', 'sans-serif';
+  font-family: 'Jeko';
 }
 
 .qurova-font {
-  font-family: 'Qurova', 'sans-serif';
+  font-family: 'Qurova';
 }
 
 .stroke-text {

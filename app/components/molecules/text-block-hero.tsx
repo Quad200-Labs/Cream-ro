@@ -1,7 +1,7 @@
-import Button from "../atoms/button";
 import Heading from "../atoms/heading";
 import Text from "../atoms/text";
 import "../../styles/font.css";
+import { Button } from "../atoms/buttons";
 
 export default function HeroTextBlock() {
   return (
