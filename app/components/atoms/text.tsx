@@ -6,5 +6,5 @@ interface TextProps {
 }
 
 export default function Text({ children, className }: TextProps) {
-  return <p className={`text-base ${className}`}>{children}</p>;
+  return <p className={`text-base text-black ${className}`}>{children}</p>;
 }

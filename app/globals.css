@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import './styles/font.css';
 
 :root {
   --background: #ffffff;
@@ -19,8 +20,21 @@
   }
 }
 
+* {
+  font-family: 'Jeko';
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Jeko';
+}
+
+.qurova-font {
+  font-family: 'Qurova';
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px #A68160;
+  color: #FFF9EB;
 }
