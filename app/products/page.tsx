@@ -1,8 +1,8 @@
-export default function AboutPage() {
+export default function ProdcutsPage() {
   return (
     <>
       <main className="px-8 py-16  mx-auto text-center bg-[#FFF9EB]">
-        <h1 className="text-4xl font-bold mb-6 text-black">About CreamRo</h1>
+        <h1 className="text-4xl font-bold mb-6 text-black">Products by CreamRo</h1>
         <p className="text-lg leading-7 text-gray-700">
           At CreamRo, we believe in crafting joy one scoop at a time. With a
           commitment to the finest ingredients and a passion for flavor, our
