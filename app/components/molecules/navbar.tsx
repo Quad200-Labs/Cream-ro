@@ -59,20 +59,20 @@ export default function Navbar() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About" },
-    { href: "/product", label: "Product" },
+    { href: "/products", label: "Products" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
     <>
       <motion.nav
-        className="fixed top-0 left-0 right-0 z-30 w-full backdrop-blur-sm transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-30 w-full backdrop-blur-sm transition-all duration-300 border-b border-[#A68160]"
         style={{ backgroundColor, boxShadow }}
         initial={{ y: 0 }}
         animate={{ y: shouldHideNav ? -100 : 0 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="flex justify-between items-center px-6 md:px-20 py-4 md:py-6 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center py-4 md:py-6 max-w-7xl mx-auto">
           <div className="flex-1">
             <Logo />
           </div>
