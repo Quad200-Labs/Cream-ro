@@ -24,3 +24,24 @@ export interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
 }
+
+export interface FlavorCardProps {
+  flavor: Flavor;
+  index: number;
+  onHover: (isHovered: boolean) => void;
+}
+
+
+export interface InfoCardProps {
+  title: string;
+  description: string;
+}
+
+export interface Flavor {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  backgroundColor: string;
+  category: string;
+}
