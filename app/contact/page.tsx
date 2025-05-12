@@ -11,8 +11,8 @@ export default function ContactUsPage() {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
         <div className="h-full flex justify-center">
-          <div className="bg-green-400 w-full h-full !rounded-bl-[105px] rounded-t-[255px] px-10 pt-10 max-w-md max-h-[682px] relative">
-            <div className="bg-blue-700 w-full max-w-sm max-h-[428px] !rounded-bl-[105px] rounded-t-[265px] h-full absolute bottom-0 right-8"></div>
+          <div className="bg-[#A6816080] w-full h-full !rounded-bl-[105px] rounded-t-[255px] px-10 pt-10 max-w-md max-h-[682px] relative">
+            <div className="bg-[#A68160] w-full max-w-sm max-h-[428px] !rounded-bl-[105px] rounded-t-[265px] h-full absolute bottom-0 right-8"></div>
           </div>
         </div>
 
