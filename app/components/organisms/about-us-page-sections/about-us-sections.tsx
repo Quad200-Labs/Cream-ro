@@ -17,7 +17,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
     <div
       className={`flex flex-col md:flex-row justify-between  ${
         reverse ? "md:flex-row-reverse md:pr-24 p-8" : "md:pl-24 p-8"
-      } items-center gap-8 py-10  bg-[#FFF9EB]`}
+      } items-center gap-8 py-20  bg-[#FFF9EB]`}
     >
       <div className="md:w-2/3 text-left ">
         <h2 className="text-3xl font-bold text-black mb-4">{title}</h2>

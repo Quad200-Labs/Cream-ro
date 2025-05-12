@@ -5,7 +5,7 @@ import ConeTubImage from "../../atoms/cone-tubs-image";
 export default function ProductsHeroSection() {
   return (
     <>
-      <div className="bg-[#fdecd2] py-24 px-4 text-center md:h-[775px] ">
+      <div className="bg-[#fdecd2] py-24 px-4 text-center h-screen ">
         <div className="lg:px-48 md:px-20 px-10">
           <h1 className="text-3xl sm:text-6xl font-extrabold text-black mb-6 qurova-font">
             Discover the Sweetest Indulgence
