@@ -45,3 +45,26 @@ export interface Flavor {
   backgroundColor: string;
   category: string;
 }
+
+export interface SocialLink {
+  type: "github" | "linkedin" | "twitter" | "email" | "website";
+  url: string;
+}
+
+export interface TeamMemberType {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  bio?: string;
+  socialLinks?: SocialLink[];
+}
+
+export interface Product {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  backgroundColor: string;
+  category: string;
+}
