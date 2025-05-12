@@ -1,6 +1,6 @@
 "use client";
 
-import ConeTubImage from "../../atoms/cone-tubs-image";
+import ConeTubImage from "../../molecules/cone-tubs-image";
 
 export default function ProductsHeroSection() {
   return (

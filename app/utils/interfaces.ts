@@ -68,3 +68,8 @@ export interface Product {
   price: number;
   category?: string;
 }
+
+export interface ConeTubImageProps {
+  coneLabel?: string;
+  tubLabel?: string;
+}

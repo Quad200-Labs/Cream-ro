@@ -2,7 +2,7 @@
 
 import { products } from "@/app/constants";
 import { useEffect, useState } from "react";
-import { ProductCard } from "../../atoms/product-details";
+import { ProductCard } from "../../molecules/product-details";
 import { cn } from "@/app/lib/utils";
 
 export default function ProductsSection() {
