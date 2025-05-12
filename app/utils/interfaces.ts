@@ -65,6 +65,6 @@ export interface Product {
   name: string;
   description: string;
   image: string;
-  backgroundColor: string;
-  category: string;
+  price: number;
+  category?: string;
 }
