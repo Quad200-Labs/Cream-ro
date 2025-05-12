@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 import { NavLinkProps } from "@/app/utils/interfaces";
 
 export default function NavLink({
@@ -21,8 +22,12 @@ export default function NavLink({
     >
       {label}
       {isActive && (
-        <span
+        <motion.span
+          layoutId="underline"
           className="absolute left-0 bottom-0 w-full h-0.5 bg-[#A68160]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
         />
       )}
     </Link>

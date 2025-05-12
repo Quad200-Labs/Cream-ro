@@ -72,7 +72,7 @@ export default function Navbar() {
         animate={{ y: shouldHideNav ? -100 : 0 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="flex justify-between items-center py-4 md:py-6 max-w-7xl px-10 xl:px-0 mx-auto">
+        <div className="flex justify-between items-center py-4 md:py-6 max-w-7xl mx-auto">
           <div className="flex-1">
             <Logo />
           </div>
