@@ -1,9 +1,9 @@
 "use client";
 
 import { teamMembers } from "@/app/constants";
-import { cn } from "@/app/utils/interfaces";
 import { useEffect, useState } from "react";
 import { TeamMember } from "../../molecules/team-members";
+import { cn } from "@/app/lib/utils";
 
 
 export default function TeamSection() {

@@ -1,9 +1,9 @@
 "use client";
 
 import { products } from "@/app/constants";
-import { cn } from "@/app/utils/interfaces";
 import { useEffect, useState } from "react";
 import { ProductCard } from "../../atoms/product-details";
+import { cn } from "@/app/lib/utils";
 
 export default function ProductsSection() {
   const [isVisible, setIsVisible] = useState(false);

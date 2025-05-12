@@ -1,6 +1,7 @@
 "use client";
 
-import { cn, Product } from "@/app/utils/interfaces";
+import { cn } from "@/app/lib/utils";
+import { Product } from "@/app/utils/interfaces";
 
 interface ProductCardProps {
   product: Product;

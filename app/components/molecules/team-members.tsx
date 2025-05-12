@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Github, Linkedin, Twitter, Mail, ExternalLink } from "lucide-react";
-import { cn, TeamMemberType } from "@/app/utils/interfaces";
+import { TeamMemberType } from "@/app/utils/interfaces";
+import { cn } from "@/app/lib/utils";
 
 
 interface TeamMemberProps {
