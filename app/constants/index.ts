@@ -5,7 +5,7 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
-import { TeamMemberType } from "../utils/interfaces";
+import { Product, TeamMemberType } from "../utils/interfaces";
 
 export const socialLinks = [
   { href: "https://facebook.com", icon: FaFacebookF, label: "Facebook" },
@@ -117,5 +117,62 @@ export const teamMembers: TeamMemberType[] = [
       { type: "linkedin", url: "https://linkedin.com" },
       { type: "email", url: "mailto:example@example.com" },
     ],
+  },
+];
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "Vanilla Bean Dream",
+    description:
+      "Rich and creamy vanilla ice cream made with premium Madagascar vanilla beans, creating a classic flavor that's anything but ordinary.",
+    image: "https://images.pexels.com/photos/1352278/pexels-photo-1352278.jpeg",
+    price: 4.99,
+    category: "Classic",
+  },
+  {
+    id: "2",
+    name: "Chocolate Fudge Bliss",
+    description:
+      "Decadent chocolate ice cream swirled with ribbons of rich fudge, delivering an intensely satisfying chocolate experience.",
+    image: "https://images.pexels.com/photos/1352281/pexels-photo-1352281.jpeg",
+    price: 5.49,
+    category: "Classic",
+  },
+  {
+    id: "3",
+    name: "Strawberry Fields",
+    description:
+      "Fresh strawberry ice cream made with real fruit, capturing the essence of sun-ripened berries in every scoop.",
+    image: "https://images.pexels.com/photos/1352275/pexels-photo-1352275.jpeg",
+    price: 5.29,
+    category: "Fruit",
+  },
+  {
+    id: "4",
+    name: "Mint Chocolate Chip",
+    description:
+      "Cool mint ice cream studded with premium dark chocolate chips, creating a refreshing and indulgent treat.",
+    image: "https://images.pexels.com/photos/1352276/pexels-photo-1352276.jpeg",
+    price: 5.49,
+    category: "Classic",
+  },
+  {
+    id: "5",
+    name: "Caramel Swirl",
+    description:
+      "Smooth vanilla ice cream with golden caramel ribbons throughout, offering the perfect balance of sweet and creamy.",
+    image: "https://images.pexels.com/photos/1352277/pexels-photo-1352277.jpeg",
+    price: 5.29,
+    category: "Classic",
+  },
+  {
+    id: "6",
+    name: "Berry Medley",
+    description:
+      "A vibrant mix of raspberry, blueberry, and blackberry ice cream, delivering a burst of fresh berry flavors.",
+    image: "https://images.pexels.com/photos/1352279/pexels-photo-1352279.jpeg",
+    price: 5.99,
+    category: "Fruit",
   },
 ];

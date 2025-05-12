@@ -6,7 +6,7 @@ import TeamSection from "../components/organisms/about-us-page-sections/team";
 export default function AboutPage() {
   return (
     <>
-      <div className="bg-[#FFF9EB] sm:px-20 px-10 py-16 flex flex-col md:flex-row items-center justify-between">
+      <div className="bg-[#FFECD4] sm:px-20 px-10 py-16 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-left space-y-6">
           <h1 className="text-3xl sm:text-6xl font-bold text-black qurova-font">
             Experience the Delight of CreamRo
