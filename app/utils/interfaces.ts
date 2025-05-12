@@ -25,6 +25,27 @@ export interface MobileMenuProps {
   onClose: () => void;
 }
 
+export interface FlavorCardProps {
+  flavor: Flavor;
+  index: number;
+  onHover: (isHovered: boolean) => void;
+}
+
+
+export interface InfoCardProps {
+  title: string;
+  description: string;
+}
+
+export interface Flavor {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  backgroundColor: string;
+  category: string;
+}
+
 export interface SocialLink {
   type: "github" | "linkedin" | "twitter" | "email" | "website";
   url: string;
@@ -44,12 +65,6 @@ export interface Product {
   name: string;
   description: string;
   image: string;
-  price: number;
-  category?: string;
-}
-
-
-export interface ConeTubImageProps {
-  coneLabel?: string;
-  tubLabel?: string;
+  backgroundColor: string;
+  category: string;
 }
