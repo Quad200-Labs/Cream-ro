@@ -24,3 +24,32 @@ export interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
 }
+
+export interface SocialLink {
+  type: "github" | "linkedin" | "twitter" | "email" | "website";
+  url: string;
+}
+
+export interface TeamMemberType {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  bio?: string;
+  socialLinks?: SocialLink[];
+}
+
+export interface Product {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  price: number;
+  category?: string;
+}
+
+
+export interface ConeTubImageProps {
+  coneLabel?: string;
+  tubLabel?: string;
+}
