@@ -16,10 +16,10 @@ export default function Footer() {
   return (
     <footer className="bg-[#FFECD4]">
       <div className="mx-auto">
-        <div className="container py-16 px-8 xl:px-0 mx-auto">
+        <div className="container py-16 px-8 sm:px-16 mx-auto">
           <div className="text-center mb-16 flex flex-col lg:flex-row w-full justify-between items-center">
             <motion.h2
-              className="text-3xl font-bold mb-6 text-black"
+              className="text-2xl xl:text-3xl font-bold mb-6 text-black min-w-xs text-left"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="py-8 px-16 bg-[#A68160] border-t border-[#A68160]/20 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-white">
+        <div className="py-8 px-16 sm:px-8 bg-[#A68160] border-t border-[#A68160]/20 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-white">
           <p>Copyright © 2025</p>
           <div className="flex gap-4">
             <div className="hover:text-[#A68160] transition-colors">

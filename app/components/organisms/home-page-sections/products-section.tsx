@@ -6,7 +6,7 @@ import { productData, productFilters } from "@/app/constants";
 import { useState } from "react";
 import { LuCupSoda, LuIceCreamBowl } from "react-icons/lu";
 import { BiPopsicle } from "react-icons/bi";
-import { IceCreamCone } from 'lucide-react';
+import { IceCreamCone } from "lucide-react";
 
 export default function ProductsSection() {
   const [activeFilter, setActiveFilter] = useState("All Products");
@@ -23,13 +23,7 @@ export default function ProductsSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          How Do You{" "}
-          <span className="relative inline-block">
-            <span className="underline decoration-wavy decoration-caramel">
-              Scoop
-            </span>
-          </span>
-          ?
+          How Do You Scoop ?
         </motion.h2>
 
         <motion.p
@@ -65,9 +59,9 @@ export default function ProductsSection() {
             </button>
           ))}
         </div>
-        
+
         {/* Product Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-40 gap-x-10 mx-auto w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 space-y-40 gap-x-10 mx-auto w-full">
           {items.map((product, index) => (
             <ProductCard
               key={product.title}
