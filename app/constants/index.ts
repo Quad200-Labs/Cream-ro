@@ -19,14 +19,14 @@ export const quickLinks = [
   { href: "/knowledge-base", label: "Knowledge Base" },
   { href: "/hire-expert", label: "Hire an expert" },
   { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact" },
+  { href: "/pages/contact-us", label: "Contact" },
 ];
 
 export const ourServices = [
   { href: "/", label: "Home" },
-  { href: "/about-us", label: "About Us" },
-  { href: "/products", label: "Products" },
-  { href: "/contact", label: "Contact" },
+  { href: "/pages/about-us", label: "About Us" },
+  { href: "/pages/products", label: "Products" },
+  { href: "/pages/contact-us", label: "Contact" },
 ];
 
 
