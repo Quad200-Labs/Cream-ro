@@ -26,19 +26,19 @@ function HamburgerButton({ isOpen, onClick }: HamburgerButtonProps) {
         initial={{ rotate: 0 }}
         animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 8 : 0 }}
         transition={{ duration: 0.3 }}
-        className="w-6 h-0.5 bg-black block mb-1.5"
+        className="w-6 h-0.5 bg-[#FFECD4] block mb-1.5"
       />
       <motion.span
         initial={{ opacity: 1 }}
         animate={{ opacity: isOpen ? 0 : 1 }}
         transition={{ duration: 0.3 }}
-        className="w-6 h-0.5 bg-black block mb-1.5"
+        className="w-6 h-0.5 bg-[#FFECD4] block mb-1.5"
       />
       <motion.span
         initial={{ rotate: 0 }}
         animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -8 : 0 }}
         transition={{ duration: 0.3 }}
-        className="w-6 h-0.5 bg-black block"
+        className="w-6 h-0.5 bg-[#FFECD4] block"
       />
     </button>
   );

@@ -29,7 +29,7 @@ export default function FlavorCard({
           : flavor.name === "Strawberry"
           ? "rounded-l-4xl rounded-tr-4xl"
           : flavor.name === "Fruit & Nut" && "rounded-r-4xl rounded-tl-4xl"
-      } aspect-[3/4] lg:min-w-sm w-full shadow-lg`}
+      } aspect-[3/4] min-w-xs lg:min-w-sm w-full shadow-lg`}
       style={{ backgroundColor: flavor.backgroundColor }}
       key={index}
       whileHover={{

@@ -60,7 +60,7 @@ export default function Hero() {
           alt="Splash"
           width={100}
           height={100}
-          className="absolute -top-18 sm:-top-16 -left-12 lg:-left-16"
+          className="absolute -top-13 sm:-top-16 -left-15 lg:-left-16"
         />
         <HeroTextBlock
           heading={"Delight in the Rich and Finest Flavors of CreamRo"}

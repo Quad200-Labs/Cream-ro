@@ -17,7 +17,7 @@ export default function ProductsSection({ data }: ProductsSectionProps) {
   }, []);
 
   return (
-    <section className="py-16 md:py-28 mt-56 bg-[#fffaf0] text-black w-full overflow-hidden">
+    <section className="py-16 md:py-28 lg:mt-56 bg-[#fffaf0] text-black w-full overflow-hidden">
       <div className="px-4 md:px-6 mx-auto max-w-7xl space-y-20">
         {Object.entries(data).map(([category, products], catIdx) => (
           <div key={category}>

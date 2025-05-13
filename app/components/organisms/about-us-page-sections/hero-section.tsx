@@ -5,7 +5,7 @@ import { IoIceCreamOutline } from "react-icons/io5";
 
 export default function HeroSectionAboutUs() {
   return (
-    <section className="bg-[#FFF9EB] relative px-16 lg:px-20 xl:px-40 py-16 min-h-screen overflow-hidden flex flex-col-reverse lg:flex-row justify-between items-center gap-10">
+    <section className="bg-[#FFF9EB] relative px-8 lg:px-20 xl:px-40 py-16 min-h-screen overflow-hidden flex flex-col-reverse lg:flex-row justify-between items-center gap-10">
       <HeroTextBlock
         heading={"Experience the Delight of CreamRo"}
         paragraph={
