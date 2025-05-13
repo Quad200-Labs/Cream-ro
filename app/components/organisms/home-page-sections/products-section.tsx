@@ -68,12 +68,13 @@ export default function ProductsSection() {
         
         {/* Product Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-40 gap-x-10 mx-auto w-full">
-          {items.map((product, index) => (
+          {items.map((product) => (
             <ProductCard
               key={product.title}
+              image={product.image}
               title={product.title}
               description={product.description}
-              index={index}
+              index={parseInt(product.id)}
             />
           ))}
         </div>

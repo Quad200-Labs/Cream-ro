@@ -66,10 +66,22 @@ export interface ConeTubImageProps {
 }
 
 export interface Product {
+  id: string;
   title: string;
   description: string;
+  price?: number;
+  image?: string;
+  rating?: number;
+  sizes?: string[];
+  flavors?: string[];
 }
+
 
 export interface ProductsSectionProps {
   data: Record<string, Product[]>;
+}
+
+export interface RelatedProductsProps {
+  category: string;
+  currentProductId: string;
 }
