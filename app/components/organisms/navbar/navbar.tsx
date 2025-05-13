@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import NavLink from "../atoms/nav-link";
-import Logo from "../atoms/logo";
-import { HamburgerButton } from "../atoms/buttons";
+import { HamburgerButton } from "../../atoms/buttons";
+import Logo from "../../atoms/logo";
+import NavLink from "../../atoms/nav-link";
 import MobileMenu from "./mobile-navbar";
 
 export default function Navbar() {

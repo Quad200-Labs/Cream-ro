@@ -1,9 +1,9 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import NavLink from "../atoms/nav-link";
 import { MobileMenuProps } from "@/app/utils/interfaces";
 import { IoClose } from "react-icons/io5";
+import NavLink from "../../atoms/nav-link";
 
 
 

@@ -4,7 +4,7 @@ import ProductsHeroSection from "../components/organisms/products-page-sections/
 export default function ProdcutsPage() {
   return (
     <>
-      <main className="  bg-[#FFF9EB]">
+      <main className="bg-[#FFF9EB]">
         <ProductsHeroSection />
         <ProductsSection />
       </main>
