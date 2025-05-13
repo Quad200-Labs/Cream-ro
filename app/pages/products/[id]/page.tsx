@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import SingleProductCard from "@/app/components/molecules/single-product-card";
 import RelatedProducts from "@/app/components/organisms/products-page-sections/related-products";
 import ProductHeroSection from "@/app/components/organisms/products-page-sections/single-product-hero-section";
@@ -5,13 +6,8 @@ import { productData } from "@/app/constants";
 import { Product } from "@/app/utils/interfaces";
 import { notFound } from "next/navigation";
 
-interface ProductPageProps {
-  params: { id: string };
-}
-
-export default function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params }: any) {
   const allProducts = Object.values(productData).flat();
-
   const product = allProducts.find((p) => p.id === params.id);
 
   if (!product) return notFound();
