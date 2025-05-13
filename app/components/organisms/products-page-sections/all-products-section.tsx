@@ -1,11 +1,11 @@
 "use client";
 
-import { products } from "@/app/constants";
 import { useEffect, useState } from "react";
 import { ProductCard } from "../../molecules/product-details";
 import { cn } from "@/app/lib/utils";
+import { ProductsSectionProps } from "@/app/utils/interfaces";
 
-export default function ProductsSection() {
+export default function ProductsSection({ data }: ProductsSectionProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -17,41 +17,44 @@ export default function ProductsSection() {
   }, []);
 
   return (
-    <section className="py-16 md:py-28 md:mt-48 mt-10 bg-[#fffaf0] text-black w-full overflow-hidden">
-      <div className="px-4 md:px-6 mx-auto max-w-7xl">
-        <div
-          className={cn(
-            "space-y-4 text-center transition-all duration-700 transform",
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          )}
-        >
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight qurova-font">
-            Flavors to Match Every Craving
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto jeko-font">
-            From timeless classics to bold new creations, dive into our
-            selection of irresistible ice cream flavors. Whether you prefer
-            something familiar or love to explore unique taste sensations, we
-            have the perfect scoop waiting for you
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 mt-16">
-          {products.map((product, index) => (
+    <section className="py-16 md:py-28 mt-56 bg-[#fffaf0] text-black w-full overflow-hidden">
+      <div className="px-4 md:px-6 mx-auto max-w-7xl space-y-20">
+        {Object.entries(data).map(([category, products], catIdx) => (
+          <div key={category}>
             <div
-              key={product.id}
               className={cn(
-                "transition-all duration-700 transform",
+                "text-center transition-all duration-700 transform",
                 isVisible
                   ? "translate-y-0 opacity-100"
-                  : "translate-y-20 opacity-0"
+                  : "translate-y-10 opacity-0"
               )}
-              style={{ transitionDelay: `${150 + index * 100}ms` }}
+              style={{ transitionDelay: `${catIdx * 100}ms` }}
             >
-              <ProductCard product={product} />
+              <h2 className="text-3xl md:text-4xl font-bold qurova-font mb-4 text-left">
+                {category}
+              </h2>
             </div>
-          ))}
-        </div>
+
+            <div className="w-full h-px bg-[#B69B80] mb-10"/>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+              {products.map((product, index) => (
+                <div
+                  key={index}
+                  className={cn(
+                    "transition-all duration-700 transform",
+                    isVisible
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-20 opacity-0"
+                  )}
+                  style={{ transitionDelay: `${150 + index * 100}ms` }}
+                >
+                  <ProductCard product={product} />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
