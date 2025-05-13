@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import NavLink from "../atoms/nav-link";
-import Logo from "../atoms/logo";
-import { HamburgerButton } from "../atoms/buttons";
+import { HamburgerButton } from "../../atoms/buttons";
+import Logo from "../../atoms/logo";
+import NavLink from "../../atoms/nav-link";
 import MobileMenu from "./mobile-navbar";
+import { routePaths } from "@/app/routes/routes";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,12 +17,13 @@ export default function Navbar() {
   const backgroundColor = useTransform(
     scrollY,
     [0, 100],
-    ["rgba(255, 249, 235, 0.95)", "rgba(255, 249, 235, 0.98)"]
+    ["#A68160", "#A68160"]
   );
+
   const boxShadow = useTransform(
     scrollY,
     [0, 100],
-    ["0 0 0 rgba(0,0,0,0)", "0 4px 20px rgba(166, 129, 96, 0.1)"]
+    ["0 0 0 rgba(0, 0, 0, 0)", "0 4px 20px rgba(0, 0, 0, 0.2)"]
   );
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -56,13 +58,6 @@ export default function Navbar() {
     };
   }, [isMenuOpen]);
 
-  const links = [
-    { href: "/", label: "Home" },
-    { href: "/about-us", label: "About" },
-    { href: "/products", label: "Products" },
-    { href: "/contact", label: "Contact" },
-  ];
-
   return (
     <>
       <motion.nav
@@ -84,12 +79,12 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, staggerChildren: 0.1 }}
             >
-              {links.map((link) => (
+              {routePaths.map((link) => (
                 <NavLink
                   key={link.href}
                   href={link.href}
                   label={link.label}
-                  className="hover:text-[#A68160]"
+                  className="hover:text-[#FFF9EB] text-[#FFECD4]"
                 />
               ))}
             </motion.div>

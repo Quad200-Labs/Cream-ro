@@ -8,7 +8,7 @@ export default function Logo({ className = "" }: LogoProps) {
   return (
     <Link href="/">
       <motion.span
-        className={`text-black text-xl font-bold qurova-font ${className}`}
+        className={`text-[#FFECD4] text-xl font-bold qurova-font ${className}`}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >

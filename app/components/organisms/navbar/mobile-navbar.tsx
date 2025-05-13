@@ -1,9 +1,10 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import NavLink from "../atoms/nav-link";
 import { MobileMenuProps } from "@/app/utils/interfaces";
 import { IoClose } from "react-icons/io5";
+import NavLink from "../../atoms/nav-link";
+import { routePaths } from "@/app/routes/routes";
 
 
 
@@ -44,12 +45,6 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     },
   };
 
-  const links = [
-    { href: "/", label: "Home" },
-    { href: "/about-us", label: "About" },
-    { href: "/product", label: "Product" },
-    { href: "/contact", label: "Contact" },
-  ];
 
   return (
     <AnimatePresence>
@@ -78,7 +73,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               <IoClose size={24} className="text-[#A68160]" />
             </button>
             <nav className="flex flex-col space-y-6">
-              {links.map((link) => (
+              {routePaths.map((link) => (
                 <motion.div key={link.href} variants={linkVariants}>
                   <NavLink
                     href={link.href}

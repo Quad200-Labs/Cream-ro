@@ -62,7 +62,13 @@ export default function Hero() {
           height={100}
           className="absolute -top-18 sm:-top-16 -left-12 lg:-left-16"
         />
-        <HeroTextBlock />
+        <HeroTextBlock
+          heading={"Delight in the Rich and Finest Flavors of CreamRo"}
+          paragraph={
+            "Experience the magic of CreamRo – where every scoop is a masterpiece of rich, creamy delight. Made from the finest ingredients, our handcrafted flavors are designed to satisfy your sweetest cravings."
+          }
+          routePath={true}
+        />
       </div>
 
       {/* Right-side Block */}
