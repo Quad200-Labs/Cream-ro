@@ -23,13 +23,7 @@ export default function ProductsSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          How Do You{" "}
-          <span className="relative inline-block">
-            <span className="underline decoration-wavy decoration-caramel">
-              Scoop
-            </span>
-          </span>
-          ?
+          How Do You Scoop ?
         </motion.h2>
 
         <motion.p
@@ -51,7 +45,7 @@ export default function ProductsSection() {
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-6 py-2 rounded-full font-semibold flex items-center gap-2 transition-all ${
+              className={`sm:px-6 py-2 rounded-full font-semibold flex items-center min-w-36 justify-center gap-2 hover:cursor-pointer duration-300 transition-all hover:border hover:border-[#A68160] ${
                 activeFilter === filter
                   ? "bg-[#A68160] text-white shadow-md"
                   : "bg-white text-[#403225] hover:bg-[#FFF9EB] border border-[#A68160]/20"
@@ -65,7 +59,7 @@ export default function ProductsSection() {
             </button>
           ))}
         </div>
-        
+
         {/* Product Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-40 gap-x-10 mx-auto w-full">
           {items.map((product) => (
