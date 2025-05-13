@@ -19,7 +19,7 @@ export default function SampleImageGallery() {
       <div className="flex justify-center gap-8 relative">
         <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
           <button onClick={() => {}}>
-            <ChevronLeft size={28} />
+            <ChevronLeft size={28} className="text-black" />
           </button>
         </div>
         {dummyImages.map((img, index) => (
@@ -34,7 +34,7 @@ export default function SampleImageGallery() {
         ))}
         <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
           <button onClick={() => {}}>
-            <ChevronRight size={28} />
+            <ChevronRight size={28} className="text-black" />
           </button>
         </div>
       </div>

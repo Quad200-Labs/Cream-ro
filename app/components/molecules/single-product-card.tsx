@@ -17,7 +17,10 @@ export default function SingleProductCard({ product }: SingleProductCardProps) {
 
   return (
     <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4 sm:px-20">
-      <div className="w-full aspect-square bg-[#B69B80] rounded-t-[240px] rounded-bl-[105px]" />
+      <div className="flex flex-col">
+        <div className="w-full aspect-square bg-[#B69B80] rounded-t-[240px] rounded-bl-[105px]" />
+        <SampleImageGallery />
+      </div>
 
       <div className="text-black">
         {/* Ratings */}
@@ -57,10 +60,14 @@ export default function SingleProductCard({ product }: SingleProductCardProps) {
                 return (
                   <div
                     key={index}
-                    className="w-6 h-6 rounded-full border"
-                    style={{ backgroundColor: color }}
-                    title={flavor}
-                  />
+                    className="w-8 h-8 rounded-full border-2 border-[#403225] flex justify-center items-center"
+                  >
+                    <div
+                      className="w-6 h-6 rounded-full"
+                      style={{ backgroundColor: color }}
+                      title={flavor}
+                    />
+                  </div>
                 );
               })}
             </div>
@@ -82,8 +89,6 @@ export default function SingleProductCard({ product }: SingleProductCardProps) {
             </div>
           </div>
         )}
-
-        <SampleImageGallery />
       </div>
     </div>
   );

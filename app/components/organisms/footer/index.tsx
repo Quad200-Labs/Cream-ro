@@ -15,7 +15,7 @@ import { HiOutlineCalendarDays } from "react-icons/hi2";
 export default function Footer() {
   return (
     <footer className="bg-[#FFECD4]">
-      <div className="mx-auto">
+      <div className="mx-auto px-10">
         <div className="container py-16 px-8 xl:px-0 mx-auto">
           <div className="text-center mb-16 flex flex-col lg:flex-row w-full justify-between items-center">
             <motion.h2
