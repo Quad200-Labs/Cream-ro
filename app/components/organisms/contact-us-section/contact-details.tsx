@@ -1,23 +1,5 @@
+import { contactData } from "@/app/constants";
 import ContactItem from "../../molecules/contact-item";
-
-const contactData = [
-  {
-    title: "Address",
-    content: "6265 Brockport Spencerport Rd, Brockport NY 14420",
-  },
-  {
-    title: "Phone number",
-    content: "+6856585036197",
-  },
-  {
-    title: "Email",
-    content: "nathan_wood@yahoo.com",
-  },
-  {
-    title: "Opening hours",
-    content: "24/7 hour service",
-  },
-];
 
 export default function ContactInfo() {
   return (
