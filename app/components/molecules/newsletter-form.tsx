@@ -24,7 +24,7 @@ export default function NewsletterForm() {
       />
       <motion.button
         type="submit"
-        className="px-3 py-2 rounded-full bg-[#A68160] text-[#FFECD4] font-medium hover:bg-[#8B6B4F] transition-colors"
+        className="px-5 py-2 rounded-full bg-[#A68160] text-[#FFECD4] font-medium hover:bg-[#8B6B4F] transition-colors"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >

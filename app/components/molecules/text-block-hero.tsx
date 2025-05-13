@@ -7,10 +7,12 @@ export default function HeroTextBlock({
   heading,
   paragraph,
   routePath,
+  paragraphStyles
 }: {
   heading: string;
   paragraph: string;
   routePath?: boolean;
+  paragraphStyles?: string;
 }) {
   return (
     <div className="sm:max-w-2xl space-y-6 relative">
@@ -18,7 +20,7 @@ export default function HeroTextBlock({
         {heading}
       </Heading>
       <div>
-        <Text className="max-w-md text-black font-semibold">
+        <Text className={`max-w-md ${paragraphStyles} text-black font-semibold`}>
           {/*  */}
           {paragraph}
         </Text>
