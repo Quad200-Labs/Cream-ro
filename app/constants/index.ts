@@ -351,3 +351,23 @@ export const teamMembers: TeamMemberType[] = [
     ],
   },
 ];
+
+export const contactData = [
+  {
+    title: "Address",
+    content: "6265 Brockport Spencerport Rd, Brockport NY 14420",
+  },
+  {
+    title: "Phone number",
+    content: "+6856585036197",
+  },
+  {
+    title: "Email",
+    content: "nathan_wood@yahoo.com",
+  },
+  {
+    title: "Opening hours",
+    content: "24/7 hour service",
+  },
+];
+
