@@ -2,7 +2,7 @@ import React from "react";
 
 export default function OurStory() {
   return (
-    <section className="w-full py-20 bg-[#FFF9EB]">
+    <section className="w-full pb-20 bg-[#FFF9EB]">
       <div className="container mx-auto px-4 max-w-6xl">
         <h1 className="text-5xl md:text-6xl font-semibold text-center text-black mb-8 qurova-font">
           Our Story
