@@ -15,7 +15,7 @@ export default function ContactInfo() {
           ))}
         </div>
 
-        <div className="w-full lg:w-1/3 aspect-square bg-[#a67c52] rounded-bl-[105px] rounded-t-[40px] p-5">
+        <div className="w-full lg:w-1/3 aspect-square bg-[#A68160] rounded-bl-[105px] rounded-t-[40px] p-5">
           <iframe
             title="Location Map"
             src="https://www.google.com/maps?q=6265+Brockport+Spencerport+Rd,+Brockport,+NY+14420&output=embed"
