@@ -100,20 +100,20 @@ export default function Footer() {
         <div className="py-8 px-16 bg-[#A68160] border-t border-[#A68160]/20 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-white">
           <p>Copyright © 2025</p>
           <div className="flex gap-4">
-            <div className="hover:text-[#A68160] transition-colors">
+            <div className="hover:text-[#FFECD4] transition-colors">
               All Rights Reserved
             </div>
             <span>|</span>
             <Link
               href="/terms"
-              className="hover:text-[#A68160] transition-colors"
+              className="hover:text-[#FFECD4] transition-colors"
             >
               Terms and Conditions
             </Link>
             <span>|</span>
             <Link
               href="/privacy"
-              className="hover:text-[#A68160] transition-colors"
+              className="hover:text-[#FFECD4] transition-colors"
             >
               Privacy Policy
             </Link>
