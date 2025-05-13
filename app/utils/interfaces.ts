@@ -31,7 +31,6 @@ export interface FlavorCardProps {
   onHover: (isHovered: boolean) => void;
 }
 
-
 export interface InfoCardProps {
   title: string;
   description: string;
@@ -60,16 +59,17 @@ export interface TeamMemberType {
   socialLinks?: SocialLink[];
 }
 
-export interface Product {
-  id: string;
-  name: string;
-  description: string;
-  image: string;
-  price: number;
-  category?: string;
-}
 
 export interface ConeTubImageProps {
   coneLabel?: string;
   tubLabel?: string;
+}
+
+export interface Product {
+  title: string;
+  description: string;
+}
+
+export interface ProductsSectionProps {
+  data: Record<string, Product[]>;
 }
