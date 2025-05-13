@@ -16,7 +16,7 @@ export default function SingleProductCard({ product }: SingleProductCardProps) {
   };
 
   return (
-    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4 sm:px-20">
       <div className="w-full aspect-square bg-[#B69B80] rounded-t-[240px] rounded-bl-[105px]" />
 
       <div className="text-black">

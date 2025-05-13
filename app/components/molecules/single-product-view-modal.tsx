@@ -33,7 +33,7 @@ export default function ImageModal({
         <>
           {/* Overlay */}
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-70 z-40"
+            className="fixed inset-0 bg-black bg-opacity-70 z-40 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -46,7 +46,7 @@ export default function ImageModal({
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
           >
-            <div className="relative bg-white p-4 rounded-lg shadow-xl max-w-md w-full z-50">
+            <div className="relative bg-white p-4 rounded-lg shadow-xl max-w-md w-full z-50 mx-4">
               {/* Close Button */}
               <button
                 onClick={onClose}
