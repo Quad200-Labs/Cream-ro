@@ -54,7 +54,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative z-10 bg-[#FFF9EB]/40 w-full">
+      <div className="relative z-10 bg-[#FFF9EB]/40">
         <Image
           src="/icons/splash-icon-left.svg"
           alt="Splash"
@@ -72,14 +72,8 @@ export default function Hero() {
       </div>
 
       {/* Right-side Block */}
-      <div className="w-full h-full  rounded-xl z-10">
-        <Image
-          src="/HeroImage.png"
-          alt="Hero Image"
-          width={1000}
-          height={1000}
-          className="w-full h-full object-contain"
-        />
+      <div className="w-[300px] h-[300px] lg:w-[600px] lg:h-[600px] bg-[#f5dcc0] rounded-xl z-10">
+        
       </div>
     </section>
   );
