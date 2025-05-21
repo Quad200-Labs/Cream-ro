@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface ProductCardProps {
   title: string;
@@ -12,6 +13,7 @@ interface ProductCardProps {
 export default function ProductCard({
   title,
   description,
+  image,
   index,
 }: ProductCardProps) {
   return (
@@ -21,8 +23,16 @@ export default function ProductCard({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: index * 0.1, duration: 0.5 }}
         viewport={{ once: true }}
-        className="absolute -top-28 min-w-32 max-w-32 min-h-40 max-h-40 bg-[#A68160] rounded-tr-[240px] rounded-tl-[240px] rounded-bl-[180px] rounded-r-none"
-      ></motion.div>
+        className="absolute -top-28 min-w-32 max-w-32 flex items-center justify-center min-h-40 max-h-40 bg-[#A68160] rounded-tr-[240px] rounded-tl-[240px] rounded-bl-[180px] rounded-r-none"
+      >
+        <Image
+          src={image || ""}
+          alt={title}
+          width={100}
+          height={100}
+          className="w-full h-full"
+        />
+      </motion.div>
       <motion.div
         key={title}
         className="bg-[#FFECD4] rounded-[40px] px-6 pt-10 pb-8 shadow-lg text-left  max-h-fit min-h-72 w-full max-w-sm"

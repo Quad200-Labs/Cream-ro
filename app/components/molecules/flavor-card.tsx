@@ -1,6 +1,9 @@
+"use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FlavorCardProps } from "@/app/utils/interfaces";
+import Image from "next/image";
 
 export default function FlavorCard({
   flavor,
@@ -46,7 +49,15 @@ export default function FlavorCard({
               className="w-full h-full bg-gray-200/30 rounded-3xl"
               animate={{ scale: isHovered ? 1.05 : 1 }}
               transition={{ duration: 0.3 }}
-            />
+            >
+              <Image
+                src={flavor.image}
+                alt={flavor.name}
+                width={1000}
+                height={1000}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
           </div>
         </div>
 

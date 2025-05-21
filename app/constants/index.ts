@@ -44,7 +44,7 @@ export const flavors: Flavor[] = [
     name: "Vanilla",
     description:
       "A timeless classic made with rich, creamy vanilla and a touch of natural sweetness.",
-    image: "/images/vanilla.jpg",
+    image: "/vanilla-cup.png",
     backgroundColor: "#F5E1B9", // soft vanilla beige
     category: "Classic",
   },
@@ -53,7 +53,7 @@ export const flavors: Flavor[] = [
     name: "Chocolate",
     description:
       "Decadent and smooth chocolate crafted from premium cocoa for a deep, satisfying taste.",
-    image: "/images/chocolate.jpg",
+    image: "/chocolate-cup.png",
     backgroundColor: "#D8BBA0", // cocoa brown with a creamy undertone
     category: "Premium",
   },
@@ -62,7 +62,7 @@ export const flavors: Flavor[] = [
     name: "Strawberry",
     description:
       "Bursting with the flavor of ripe strawberries, blended into a smooth and refreshing delight.",
-    image: "/images/strawberry.jpg",
+    image: "/strawberry-cup.png",
     backgroundColor: "#FFE4EC", // soft strawberry pink
     category: "Classic",
   },
@@ -71,7 +71,7 @@ export const flavors: Flavor[] = [
     name: "Fruit & Nut",
     description:
       "A delightful mix of dried fruits and crunchy nuts, perfectly balanced in a creamy base.",
-    image: "/images/fruit-nut.jpg",
+    image: "/fruit-nut-cup.png",
     backgroundColor: "#E6F8E0", // soft light green
     category: "Specialty",
   },
@@ -90,24 +90,28 @@ export const productData: Record<string, Product[]> = {
     {
       id: "tubs",
       title: "Tubs",
+      image: "/tubs.png",
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful",
     },
     {
       id: "cones",
       title: "Cones",
+      image: "/cone.png",
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful",
     },
     {
       id: "popsicles",
       title: "Popsicles",
+      image: "/popsicle.png",
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful",
     },
     {
       id: "cups",
       title: "Cups",
+      image: "/cups.png",
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful",
     },
@@ -119,7 +123,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 250,
-      image: "/images/products/tubs-200ml.png",
+      image: "/tubs.png",
       rating: 4.5,
       sizes: ["200ml"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -130,7 +134,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 320,
-      image: "/images/products/tubs-320ml.png",
+      image: "/chocolate-cup.png",
       rating: 4.6,
       sizes: ["320ml"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -141,7 +145,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 480,
-      image: "/images/products/tubs-500ml.png",
+      image: "/strawberry-cup.png",
       rating: 4.8,
       sizes: ["500ml"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -152,7 +156,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 900,
-      image: "/images/products/tubs-1000ml.png",
+      image: "/fruit-nut-cup.png",
       rating: 1.9,
       sizes: ["1L"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -163,7 +167,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 1650,
-      image: "/images/products/tubs-2000ml.png",
+      image: "/tubs.png",
       rating: 5.0,
       sizes: ["2L"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -176,7 +180,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 120,
-      image: "/images/products/cone-40ml.png",
+      image: "/cone.png",
       rating: 4.3,
       sizes: ["40ml"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -187,7 +191,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 180,
-      image: "/images/products/cone-80ml.png",
+      image: "/cone.png",
       rating: 4.4,
       sizes: ["80ml"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -200,7 +204,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 100,
-      image: "/images/products/popsicle-orange.png",
+      image: "/popsicle.png",
       rating: 4.2,
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
     },
@@ -210,7 +214,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 100,
-      image: "/images/products/popsicle-mango.png",
+      image: "/popsicle.png",
       rating: 4.5,
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
     },
@@ -220,7 +224,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 100,
-      image: "/images/products/popsicle-strawberry.png",
+      image: "/popsicle.png",
       rating: 4.4,
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
     },
@@ -230,7 +234,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 150,
-      image: "/images/products/popsicle-chocobar.png",
+      image: "/popsicle.png",
       rating: 4.7,
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
     },
@@ -242,7 +246,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 100,
-      image: "/images/products/cup-80ml.png",
+      image: "/cups.png",
       rating: 4.2,
       sizes: ["80ml"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
@@ -253,7 +257,7 @@ export const productData: Record<string, Product[]> = {
       description:
         "A delightful way to enjoy your favorite flavors on the go! Our ice cream cups offer the perfect portion of creamy goodness, making them an ideal choice for quick refreshment. Whether you’re at work, on a picnic, or just relaxing, these convenient cups bring you the joy of CreamRo in every spoonful.",
       price: 120,
-      image: "/images/products/cup-100ml.png",
+      image: "/cups.png",
       rating: 4.3,
       sizes: ["100ml"],
       flavors: ["Vanilla", "Chocolate", "Strawberry", "Fruit & Nut"],
