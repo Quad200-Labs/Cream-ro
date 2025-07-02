@@ -35,6 +35,6 @@ body {
 }
 
 .stroke-text {
-  -webkit-text-stroke: 1px #A68160;
+  -webkit-text-stroke: 1.5px #A68160;
   color: #FFF9EB;
 }
