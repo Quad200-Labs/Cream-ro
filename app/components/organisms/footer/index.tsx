@@ -32,7 +32,7 @@ export default function Footer() {
           <hr className="border-[#A68160] mb-12" />
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-x-40 xl:gap-x-80 gap-y-8 w-full">
             <div className="space-y-6">
-              <Logo className="text-2xl" />
+              <Logo />
               <p className="text-black">
                 Find our contact details and follow us on social media
               </p>

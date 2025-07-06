@@ -12,7 +12,7 @@ export default function ConeTubImage({}: ConeTubImageProps) {
             {coneLabel}
           </p> */}
           <Image
-            src="/products-card-left.svg"
+            src="https://hkakezruxsleppd7.public.blob.vercel-storage.com/products-card-left-3RDN0FYwhiVWhMIsdtSzp4uf9dRgqb.svg"
             alt="Splash"
             width={100}
             height={100}
@@ -24,7 +24,7 @@ export default function ConeTubImage({}: ConeTubImageProps) {
             {tubLabel}
           </p> */}
           <Image
-            src="/products-card-right.svg"
+            src="https://hkakezruxsleppd7.public.blob.vercel-storage.com/products-card-right-RrAHXNuTVs0r7oa941PpY32B1wBjyB.svg"
             alt="Splash"
             width={100}
             height={100}

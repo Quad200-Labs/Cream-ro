@@ -17,7 +17,7 @@ export default function HeroSectionAboutUs() {
       </div>
       <div className="w-full h-full rounded-xl bg-[#f6e7d5] flex items-center justify-center">
         <Image
-          src="/about-us-page-banner.svg"
+          src="https://hkakezruxsleppd7.public.blob.vercel-storage.com/about-us-page-banner-GLPSbaZbOtU9Z9b5oVHEzflWjzKdbx.svg"
           alt="Splash"
           width={100}
           height={100}

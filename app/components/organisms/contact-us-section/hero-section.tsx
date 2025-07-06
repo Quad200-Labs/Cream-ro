@@ -8,7 +8,7 @@ export default function ContactHero() {
     <section className="bg-[#FFECD4] relative px-16 lg:px-20 xl:px-40 py-16 lg:min-h-screen overflow-hidden flex flex-col-reverse lg:flex-row justify-between items-center gap-10">
       <div className=" bg-[#f5dcc0] rounded-xl z-10 ">
         <Image
-          src="/contact-us-page-banner-two.svg"
+          src="https://hkakezruxsleppd7.public.blob.vercel-storage.com/contact-us-page-banner-two-QSkwBdshFZ6q3f2LXsV0Fb6Iab2daI.svg"
           alt="Splash"
           width={100}
           height={100}

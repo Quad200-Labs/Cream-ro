@@ -74,7 +74,7 @@ export default function Hero() {
       {/* Right-side Block */}
       <div className="bg-[#f5dcc0] rounded-xl z-10 flex items-center justify-center px-5 w-full h-full">
         <Image
-          src="/home-page-banner.svg"
+          src="https://hkakezruxsleppd7.public.blob.vercel-storage.com/home-page-banner-871FJ07BBfPND1TsnXcIDqfeeqf9ei.svg"
           alt="Splash"
           width={100}
           height={100}
