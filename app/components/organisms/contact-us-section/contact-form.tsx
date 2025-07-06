@@ -14,7 +14,7 @@ export default function ContactUsForm() {
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-        <div className="w-full h-full bg-[#A68160] rounded-t-[265px] rounded-bl-[105px]  p-8">
+        <div className="w-full h-full bg-[#A68160] rounded-t-[265px] rounded-bl-[105px] p-8">
           <div className="bg-[#FFF9EB] w-full h-full rounded-t-[265px] rounded-bl-[105px] relative">
             <Image
               src="https://hkakezruxsleppd7.public.blob.vercel-storage.com/contact-us-form-uSh9eFLK0eIDpTdeUNoZlTBv5YQZM9.svg"
@@ -26,7 +26,7 @@ export default function ContactUsForm() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-end h-[682px]">
+        <div className="flex flex-col justify-start sm:justify-end h-[682px]">
           <form className="space-y-5">
             <input
               type="text"
