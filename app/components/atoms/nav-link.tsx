@@ -21,7 +21,7 @@ export default function NavLink({
     >
       {label}
       {isActive && (
-        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#FFECD4]" />
+        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#A68160]" />
       )}
     </Link>
   );

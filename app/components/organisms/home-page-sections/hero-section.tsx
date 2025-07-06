@@ -72,13 +72,14 @@ export default function Hero() {
       </div>
 
       {/* Right-side Block */}
-      <div className="bg-[#f5dcc0] rounded-xl z-10 flex items-center justify-center px-5">
+      <div className="bg-[#f5dcc0] rounded-xl z-10 flex items-center justify-center px-5 w-full h-full">
         <Image
           src="/home-page-banner.svg"
           alt="Splash"
           width={100}
           height={100}
           className="w-full h-full"
+          priority
         />
       </div>
     </section>

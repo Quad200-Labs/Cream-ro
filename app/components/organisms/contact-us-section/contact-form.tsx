@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ContactUsForm() {
   return (
     <main className="bg-[#FFF9EB] py-15 px-6">
@@ -12,9 +14,20 @@ export default function ContactUsForm() {
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <div className="bg-[#A68160] w-[483px] h-[682px] rounded-t-[255px] rounded-bl-[105px] px-10 pt-10 relative">
             <div className="bg-[#FFF9EB] w-[420px] h-[652px] rounded-t-[265px] rounded-bl-[105px] absolute bottom-0 right-8"></div>
+          </div>
+        </div> */}
+        <div className="w-full h-full bg-[#A68160] rounded-t-[265px] rounded-bl-[105px]  p-8">
+          <div className="bg-[#FFF9EB] w-full h-full rounded-t-[265px] rounded-bl-[105px] relative">
+            <Image
+              src="/contact-us-form.svg"
+              alt="Splash"
+              width={100}
+              height={100}
+              className="w-full h-full"
+            />
           </div>
         </div>
 

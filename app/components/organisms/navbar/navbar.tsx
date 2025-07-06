@@ -7,24 +7,25 @@ import Logo from "../../atoms/logo";
 import NavLink from "../../atoms/nav-link";
 import MobileMenu from "./mobile-navbar";
 import { routePaths } from "@/app/routes/routes";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [shouldHideNav, setShouldHideNav] = useState(false);
 
   const { scrollY } = useScroll();
+
+  const isLightPages = pathname === "/" || pathname === "/pages/about-us";
+  const defaultBackground = isLightPages ? "#FFF9EB" : "#FFECD4";
+
   const backgroundColor = useTransform(
     scrollY,
     [0, 100],
-    ["#A68160", "#A68160"]
+    [defaultBackground, defaultBackground]
   );
-
-  const boxShadow = useTransform(
-    scrollY,
-    [0, 100],
-    ["0 0 0 rgba(0, 0, 0, 0)", "0 4px 20px rgba(0, 0, 0, 0.2)"]
-  );
+  const boxShadow = useTransform(scrollY, [0, 100], ["none", ""]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -47,12 +48,7 @@ export default function Navbar() {
   }, [lastScrollY]);
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
@@ -84,7 +80,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   label={link.label}
-                  className="hover:text-[#FFF9EB] text-[#FFECD4]"
+                  className="hover:text-[#A68160] text-[#A68160]"
                 />
               ))}
             </motion.div>
