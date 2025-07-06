@@ -5,7 +5,18 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
+import { FiMapPin } from "react-icons/fi";
+import { BsTelephone } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import { HiOutlineCalendarDays } from "react-icons/hi2";
+import type { IconType } from "react-icons";
 import { Product, TeamMemberType } from "../utils/interfaces";
+
+type ContactItemData = {
+  title: string;
+  content: string;
+  Icon: IconType;
+};
 
 export const socialLinks = [
   { href: "https://facebook.com", icon: FaFacebookF, label: "Facebook" },
@@ -356,22 +367,25 @@ export const teamMembers: TeamMemberType[] = [
   },
 ];
 
-export const contactData = [
+export const contactData: ContactItemData[] = [
   {
     title: "Address",
     content: "6265 Brockport Spencerport Rd, Brockport NY 14420",
+    Icon: FiMapPin,
   },
   {
     title: "Phone number",
     content: "+6856585036197",
+    Icon: BsTelephone,
   },
   {
     title: "Email",
     content: "nathan_wood@yahoo.com",
+    Icon: AiOutlineMail,
   },
   {
     title: "Opening hours",
     content: "24/7 hour service",
+    Icon: HiOutlineCalendarDays,
   },
 ];
-

@@ -12,6 +12,7 @@ export default function ContactInfo() {
                 key={index}
                 title={item.title}
                 content={item.content}
+                Icon={item.Icon}
               />
             ))}
           </div>
