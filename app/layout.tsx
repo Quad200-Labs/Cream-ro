@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Footer from "./components/organisms/footer";
-import Navbar from "./components/organisms/navbar/navbar";
 import ClarityProvider from "./context/calirity";
+import ConditionalLayout from "./components/organisms/conditional-layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CreamRo - Delightful Ice Cream",
+  title: "CreamRo - Coming Soon | Delightful Ice Cream",
   description:
-    "Experience the magic of CreamRo – where every scoop is a masterpiece of rich, creamy delight.",
+    "Something sweet is coming soon! CreamRo is crafting the most delicious ice cream experience just for you. Stay tuned for our grand opening!",
 };
 
 export default function RootLayout({
@@ -32,9 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ClarityProvider />
-        <Navbar />
-        <div className="pt-16 md:pt-20">{children}</div>
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
