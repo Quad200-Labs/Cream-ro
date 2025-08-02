@@ -1,9 +1,9 @@
 @import "tailwindcss";
-@import './styles/font.css';
+@import "./styles/font.css";
 
 :root {
   --background: #ededed;
-  --foreground: #FFF9EB;
+  --foreground: #fff9eb;
 }
 
 @theme inline {
@@ -15,34 +15,39 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FFF9EB;
+    --background: #fff9eb;
     --foreground: #ededed;
   }
 }
 
 * {
-  font-family: 'Jeko';
+  font-family: "Jeko";
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Jeko';
+  font-family: "Jeko";
 }
 
 .qurova-font {
-  font-family: 'Qurova';
+  font-family: "Qurova";
 }
 
 .stroke-text {
-  -webkit-text-stroke: 1.5px #A68160;
-  color: #FFF9EB;
+  -webkit-text-stroke: 1.5px #a68160;
+  color: #fff9eb;
 }
 
 /* Enhanced animations for coming soon page */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes fade-in-up {
@@ -68,7 +73,8 @@ body {
 }
 
 @keyframes gradient-x {
-  0%, 100% {
+  0%,
+  100% {
     background-size: 200% 200%;
     background-position: left center;
   }
@@ -79,13 +85,22 @@ body {
 }
 
 @keyframes flip {
-  0%, 100% { transform: rotateY(0deg); }
-  50% { transform: rotateY(180deg); }
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
 }
 
 @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-float {
@@ -115,25 +130,49 @@ body {
 }
 
 /* Animation delay classes */
-.delay-300 { animation-delay: 300ms; }
-.delay-500 { animation-delay: 500ms; }
-.delay-700 { animation-delay: 700ms; }
-.delay-900 { animation-delay: 900ms; }
-.delay-1000 { animation-delay: 1000ms; }
-.delay-1100 { animation-delay: 1100ms; }
-.delay-1200 { animation-delay: 1200ms; }
-.delay-1300 { animation-delay: 1300ms; }
-.delay-1400 { animation-delay: 1400ms; }
-.delay-1500 { animation-delay: 1500ms; }
-.delay-2000 { animation-delay: 2000ms; }
-.delay-3000 { animation-delay: 3000ms; }
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-700 {
+  animation-delay: 700ms;
+}
+.delay-900 {
+  animation-delay: 900ms;
+}
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+.delay-1100 {
+  animation-delay: 1100ms;
+}
+.delay-1200 {
+  animation-delay: 1200ms;
+}
+.delay-1300 {
+  animation-delay: 1300ms;
+}
+.delay-1400 {
+  animation-delay: 1400ms;
+}
+.delay-1500 {
+  animation-delay: 1500ms;
+}
+.delay-2000 {
+  animation-delay: 2000ms;
+}
+.delay-3000 {
+  animation-delay: 3000ms;
+}
 
 /* Responsive breakpoints for better mobile experience */
 @media (max-width: 640px) {
   .animate-float {
     animation: float 2s ease-in-out infinite;
   }
-  
+
   .animate-gradient-x {
     animation: gradient-x 3s ease infinite;
   }

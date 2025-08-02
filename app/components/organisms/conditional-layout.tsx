@@ -4,7 +4,11 @@ import { usePathname } from "next/navigation";
 import Navbar from "../organisms/navbar/navbar";
 import Footer from "../organisms/footer";
 
-export default function ConditionalLayout({ children }: { children: React.ReactNode }) {
+export default function ConditionalLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
   const isComingSoonPage = pathname === "/";
 

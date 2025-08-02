@@ -14,33 +14,33 @@ import { Button } from "@/app/components/atoms/buttons";
 export default function ComingSoonPage() {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
-//   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
-//     days: 0,
-//     hours: 0,
-//     minutes: 0,
-//     seconds: 0,
-//   });
+  //   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
+  //     days: 0,
+  //     hours: 0,
+  //     minutes: 0,
+  //     seconds: 0,
+  //   });
 
   // Set target date (you can adjust this)
-//   const targetDate = new Date("2025-12-31T00:00:00").getTime();
+  //   const targetDate = new Date("2025-12-31T00:00:00").getTime();
 
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       const now = new Date().getTime();
-//       const difference = targetDate - now;
+  //   useEffect(() => {
+  //     const timer = setInterval(() => {
+  //       const now = new Date().getTime();
+  //       const difference = targetDate - now;
 
-//       if (difference > 0) {
-//         setTimeLeft({
-//           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-//           hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-//           minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-//           seconds: Math.floor((difference % (1000 * 60)) / 1000),
-//         });
-//       }
-//     }, 1000);
+  //       if (difference > 0) {
+  //         setTimeLeft({
+  //           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //           hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+  //           minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+  //           seconds: Math.floor((difference % (1000 * 60)) / 1000),
+  //         });
+  //       }
+  //     }, 1000);
 
-//     return () => clearInterval(timer);
-//   }, [targetDate]);
+  //     return () => clearInterval(timer);
+  //   }, [targetDate]);
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();

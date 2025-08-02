@@ -31,6 +31,7 @@ export interface FlavorCardProps {
   onHover: (isHovered: boolean) => void;
 }
 
+
 export interface InfoCardProps {
   title: string;
   description: string;
@@ -43,45 +44,4 @@ export interface Flavor {
   image: string;
   backgroundColor: string;
   category: string;
-}
-
-export interface SocialLink {
-  type: "github" | "linkedin" | "twitter" | "email" | "website";
-  url: string;
-}
-
-export interface TeamMemberType {
-  id: string;
-  name: string;
-  role: string;
-  image: string;
-  bio?: string;
-  socialLinks?: SocialLink[];
-}
-
-
-export interface ConeTubImageProps {
-  coneLabel?: string;
-  tubLabel?: string;
-}
-
-export interface Product {
-  id: string;
-  title: string;
-  description: string;
-  price?: number;
-  image?: string;
-  rating?: number;
-  sizes?: string[];
-  flavors?: string[];
-}
-
-
-export interface ProductsSectionProps {
-  data: Record<string, Product[]>;
-}
-
-export interface RelatedProductsProps {
-  category: string;
-  currentProductId: string;
 }
